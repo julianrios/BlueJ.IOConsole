@@ -51,10 +51,10 @@ public class GetLongInputTest {
         this.console = getConsoleWithBufferedInput(input);
 
         // When
-        Long actual = console.getLongInput("");
+        Long actual = console.getLongInput("", input);
 
         // Then
-        Assert.assertEquals(actual, expected);
+        Assert.assertEquals(expected, actual);
     }
 
     private IOConsole getConsoleWithBufferedInput(String inputString) {
